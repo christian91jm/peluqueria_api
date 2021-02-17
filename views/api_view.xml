@@ -1,0 +1,46 @@
+<odoo>
+    <data>
+        <record id="peluqueria_api.api_model_form_inherit" model="ir.ui.view">
+
+            <field name="name"> Proveedores de productos</field>
+           
+            <field name="model">peluqueria.productos_model</field>
+           
+            <field name="inherit_id" ref="peluqueria.peluqueria_productos_form"/>
+           
+            <field name="arch" type="xml">
+                <field name="descripcion" position="after">
+                    <field name ="proveedor"/>
+                </field>
+            </field>
+
+           
+            
+           
+            
+           
+            
+        </record>
+        <record id="peluqueria_api.api_model_tree_inherit" model="ir.ui.view">
+
+            <field name="name"> Proveedores de productos</field>
+           
+            <field name="model">peluqueria.productos_model</field>
+           
+           
+           
+            <field name="inherit_id" ref="peluqueria.listado_productos_tree"/>
+           
+            <field name="arch" type="xml">
+           
+                <field name="name" position="after">
+           
+                    <field name="proveedor" />
+           
+                </field>
+           
+            </field>
+           
+            </record>
+    </data>
+</odoo>

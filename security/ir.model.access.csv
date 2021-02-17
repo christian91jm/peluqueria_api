@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_peluqueria_api_peluqueria_api,peluqueria_api.peluqueria_api,model_peluqueria_api_peluqueria_api,base.group_user,1,1,1,1
